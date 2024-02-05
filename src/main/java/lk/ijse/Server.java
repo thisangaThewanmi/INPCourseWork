@@ -1,6 +1,6 @@
-package lk.ijse.Controller;
+package lk.ijse;
 
-import org.w3c.dom.ls.LSOutput;
+import lk.ijse.Controller.Clients;
 
 import java.io.IOException;
 import java.net.ServerSocket;
