@@ -136,7 +136,7 @@ public class ClientFormController extends Thread{
                         TextFlow flow2 = new TextFlow(text2);
                         hBox.setAlignment(Pos.BOTTOM_RIGHT);
                         hBox.setStyle("-fx-alignment: center-right;-fx-fill-height: true;-fx-min-height: 50;-fx-pref-width: 520;-fx-max-width: 520;-fx-padding: 10");
-                        flow2.setStyle("-fx-background-color:  #CCFF9A;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: white;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
+                        flow2.setStyle("-fx-background-color:  #ffc7ea;-fx-background-radius:15;-fx-font-size: 15;-fx-font-weight: normal;-fx-text-fill: white;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
                         hBox.getChildren().add(flow2);
                     }
                     Platform.runLater(() -> vBox.getChildren().addAll(hBox));

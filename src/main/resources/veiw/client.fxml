@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="495.0" style="-fx-background-color: #A084CA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ClientFormController">
+
+   <children>
+      <ScrollPane layoutY="62.0" prefHeight="514.0" prefWidth="495.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="504.0" prefWidth="485.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lblClientName" layoutX="91.0" layoutY="14.0" prefHeight="43.0" prefWidth="204.0" text="Label" textFill="#fcf5f5">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtClient" layoutX="12.0" layoutY="588.0" prefHeight="51.0" prefWidth="413.0" promptText="Type the message here" style="-fx-background-radius: 15;">
+      </TextField>
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="430.0" layoutY="590.0" onAction="#send" prefHeight="60.0" prefWidth="57.0" text="Send">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-send-100.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="375.0" layoutY="596.0" onMouseClicked="#ImageOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/2606083_5563.jpeg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnEmoji" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="319.0" layoutY="596.0" onAction="#OpenEmoji" prefHeight="35.0" prefWidth="48.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/happy.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="23.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
